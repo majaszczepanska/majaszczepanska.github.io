@@ -23,3 +23,10 @@ font-family: Arial;
 text-align: right;
 clear: both;
 }
+new {
+background: #d2a4ea;
+height: 600px;
+width: 75%;
+text-align: center;
+float: right;
+}
