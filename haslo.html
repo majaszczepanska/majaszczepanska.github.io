@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    function test() {
+      let haslo = document.getElementById("haslo").value;
+      let messageElement = document.getElementById("message");
+      if (haslo.length === 0) {
+        document.getElementById("message").innerHTML="wpisz haslo";
+        document.getElementById("message").style.color = "red";
+      } else if (haslo.length >= 7 && /\d/.test(haslo)) {
+        document.getElementById("message").innerHTML="dobre";
+        document.getElementById("message").style.color = "green";
+      } else if (haslo.length >= 4 && haslo.length <= 6 && /\d/.test(haslo)) {
+        document.getElementById("message").innerHTML="srednie"; 
+        document.getElementById("message").style.color = "blue";
+      } else {
+        document.getElementById("message").innerHTML = "słabe";
+        document.getElementById("message").style.color = "orange";
+      }
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <p><label for="haslo">hasło:</label>
+    <input type="password" id="haslo"> </p>
+    <input type="button" value="test" onclick="test()">
+  </form>
+  <div id="message"></div>
+</body>
+</html>
