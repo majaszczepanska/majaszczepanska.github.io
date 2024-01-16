@@ -24,9 +24,9 @@ text-align: right;
 clear: both;
 }
 new {
-background: #d2a4ea;
-height: 600px;
-width: 20%;
+background: white;
+height: 20px;
+width: 100%;
 text-align: center;
-float: right;
+position: absolute;
 }
